@@ -6,9 +6,16 @@
 
 }
 
+
 body {
-background-color: red;
+	background: #870000;
+
+	background: -webkit-linear-gradient(to right, #190A05, #870000);
+	
+	background: linear-gradient(to right, #190A05, #870000);
+
 }
+
 
 header {
 	display: flex;
@@ -22,6 +29,14 @@ header {
 
 /*Mobile*/
 @media (min-width: 1024px) {
+	
+	.logo:hover {
+		-webkit-transform: rotateY(180deg);
+		-webkit-transform-style: preserve-3d;
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+	}
+	
 	
 	
 	.menu {
@@ -47,7 +62,22 @@ header {
 		color: black;
 		font-size: 1rem;
 	}
-
+	
+	.menu ul li::before {
+		content: "";
+		height: 10px;
+		width: 0%;
+		background: black;
+		position: absolute;
+		left: 0;
+		bottom: -12px;
+		transition: 0.4s ease-out;
+	}
+	
+	.menu ul li:hover::before {
+		width: 90%;
+	}
+	
 	
 
 	.gridPaginaUno {
