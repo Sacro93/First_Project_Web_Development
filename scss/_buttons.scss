@@ -67,6 +67,12 @@
   &.show {
     color: var(--#{$prefix}btn-active-color);
     background-color: var(--#{$prefix}btn-active-bg);
+
+    $carrito: blue;
+    $primary: $carrito;
+    $enable-shadows:true;
+
+
     // Remove CSS gradients if they're enabled
     background-image: if($enable-gradients, none, null);
     border-color: var(--#{$prefix}btn-active-border-color);
