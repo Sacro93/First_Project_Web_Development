@@ -2,9 +2,13 @@
 @include bsBanner("");
 
 
+// CSS 
+
+@import "repuestos";
+
 // scss-docs-start import-stack
 // Configuration
-@import"carrito";
+
 @import "variables";
 @import "maps";
 @import "mixins";
