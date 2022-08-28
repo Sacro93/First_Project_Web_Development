@@ -1,5 +1,4 @@
 /*Variables*/
-/*operadores*/
 body {
   padding: 20px;
   font-family: sans-serif;
@@ -13,9 +12,11 @@ img {
 
 h2 {
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
-.grid-container {
+/*operador*/
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
@@ -25,10 +26,12 @@ h2 {
 .lista {
   position: relative;
 }
-.lista :hover .titulo {
+
+.lista:hover .titulo {
   opacity: 1;
 }
-.lista :hover .ubicacionImagen img {
+
+.lista:hover .ubicacionImagen img {
   filter: blur(2px);
 }
 
@@ -54,7 +57,7 @@ h2 {
   left: 0;
   opacity: 0;
   transition: opacity 0.5s;
-  background: rgb(160, 93, 5);
+  background: rgba(189, 70, 70, 0.075);
   color: white;
   display: flex;
   align-items: center;

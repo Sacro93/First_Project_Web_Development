@@ -1,7 +1,8 @@
 /*Variables*/
+
 $colorfondo: white;
 
-$colorHover: rgb(160, 93, 5);
+$colorHover: rgba(189, 70, 70, 0.075);
 
 $texto : sans-serif;
 
@@ -13,7 +14,6 @@ $pixel: 600px;
 
 }
 
-/*operadores*/
 body {
   padding: calc($pixel/30);
   font-family: $texto;
@@ -26,9 +26,11 @@ img {
 
 h2 {
   margin-bottom: .5em;
+  text-align: center;
+ 
 }
-
-.grid-container {
+/*operador*/
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(calc($pixel/2), 1fr));
   grid-gap: 1em;
@@ -36,32 +38,40 @@ h2 {
 
 
 /*Anidamiento*/
-
-.lista {
+.lista{
   position: relative;
-
-  :hover {
-    .titulo {
-      opacity: 1;
-    }
-
-    .ubicacionImagen img {
-      filter: blur(2px);
-
-    }
-  }
 }
+.lista:hover .titulo {
+  opacity: 1;
+}
+
+.lista:hover .ubicacionImagen img {
+  filter: blur(2px);
+}
+// /**  cuando compilo asi no me toma el hover**/
+//  .lista{
+//    position: relative;
+// :hover .titulo {
+//    opacity: 1;
+ 
+// .ubicacionImagen img {
+//    filter: blur(2px);
+//  }
+// }
+//  }
+
 
 .ubicacionImagen {
   line-height: 0;
   overflow: hidden;
-
-  img {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
-    transform: scale(1.1);
-  }
+ img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
 }
+}
+
+
 
 
 .titulo {
@@ -84,65 +94,3 @@ h2 {
 }
 
 
-// body {
-//   padding: 20px;
-//   font-family: sans-serif;
-//   background: #f2f2f2;
-// }
-// img {
-//   width: 100%; 
-//   height: auto;
-// }
-// h2 {
-//   margin-bottom: .5em;
-// }
-
-
-// .grid-container {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-//   grid-gap: 1em;
-// }
-
-// .lista{
-//   position: relative;
-// }
-// .lista:hover .titulo {
-//   opacity: 1;
-// }
-
-// .lista:hover .ubicacionImagen img {
-//   filter: blur(2px);
-// }
-
-
-// .ubicacionImagen {
-//   line-height: 0;
-//   overflow: hidden;
-// }
-
-// .ubicacionImagenimg {
-//   filter: blur(0px);
-//   transition: filter 0.3s ease-in;
-//   transform: scale(1.1);
-// }
-
-// .titulo {
-//   font-size: 1.5em;
-//   font-weight: bold;
-//   text-decoration: none;
-//   z-index: 1;
-//   position: absolute;
-//   height: 100%;
-//   width: 100%;
-//   top: 0;
-//   left: 0;
-//   opacity: 0;
-//   transition: opacity .5s;
-//   background: rgba(90,0,10,0.4);
-//   color: white;
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
