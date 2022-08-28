@@ -21,8 +21,8 @@ body {
 }
 
 img {
-  @include tamaño(100%, auto)
-}
+  @include tamaño(100%, auto);
+ 
 
 h2 {
   margin-bottom: .5em;
@@ -34,6 +34,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(calc($pixel/2), 1fr));
   grid-gap: 1em;
+  
 }
 
 
@@ -91,6 +92,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 
