@@ -1,0 +1,17 @@
+.texto {
+  background-color: blanchedalmond;
+  color: $colorTexto;
+  font-family: $texto;
+  text-align: center;
+}
+
+h1 {
+  @extend .texto;
+  font-size: 2em;
+  text-align: center
+}
+
+h2 {
+  @extend .texto;
+  font-size: 1.5em;
+}

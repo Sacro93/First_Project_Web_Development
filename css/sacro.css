@@ -29,7 +29,7 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
@@ -50,18 +50,37 @@ h2 {
   left: 0;
   opacity: 0;
   transition: opacity 0.5s;
-  background: rgb(238, 150, 150);
+  background: rgb(255, 255, 255);
   color: white;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
+  border-radius: 5px;
 }
 
-/*operador*/
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
+  gap: 30px;
+}
+
+.texto, h2, h1 {
+  background-color: blanchedalmond;
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=sacro.css.map */
