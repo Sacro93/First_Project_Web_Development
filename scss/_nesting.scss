@@ -1,0 +1,33 @@
+/*Anidamiento*/
+.lista{
+  position: relative;
+}
+.lista:hover .titulo {
+  opacity: 1;
+}
+
+.lista:hover .ubicacionImagen img {
+  filter: blur(2px);
+}
+// /**  cuando compilo asi no me toma el hover**/
+//  .lista{
+//    position: relative;
+// :hover .titulo {
+//    opacity: 1;
+ 
+// .ubicacionImagen img {
+//    filter: blur(2px);
+//  }
+// }
+//  }
+
+
+.ubicacionImagen {
+  line-height: 0;
+  overflow: hidden;
+ img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+}

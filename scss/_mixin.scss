@@ -1,0 +1,9 @@
+@mixin tamaño($width, $altura) {
+  width: $width;
+  height: $altura;
+
+}
+img {
+  @include tamaño(100%, auto);
+ 
+}

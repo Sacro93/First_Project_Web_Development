@@ -1,0 +1,33 @@
+
+h2 {
+  margin-bottom: .5em;
+  text-align: center;
+ 
+}
+
+
+
+.titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  @include tamaño(100%, 100%);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: $colorHover;
+  color: $colorfondo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*operador*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc($pixel/2), 1fr));
+  grid-gap: 1em;
+  
+}

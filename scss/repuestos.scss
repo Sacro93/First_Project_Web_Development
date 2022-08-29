@@ -1,98 +1,13 @@
 /*Variables*/
+@import "variables";
+@import "nesting";
+@import "mixin";
+@import "body";
 
-$colorfondo: white;
 
-$colorHover: rgba(189, 70, 70, 0.075);
 
-$texto : sans-serif;
 
-$pixel: 600px;
-
-@mixin tamaño($width, $altura) {
-  width: $width;
-  height: $altura;
-
-}
-
-body {
-  padding: calc($pixel/30);
-  font-family: $texto;
-  background: $colorfondo;
-}
-
-img {
-  @include tamaño(100%, auto);
- 
-
-h2 {
-  margin-bottom: .5em;
-  text-align: center;
- 
-}
-/*operador*/
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc($pixel/2), 1fr));
-  grid-gap: 1em;
   
-}
 
-
-/*Anidamiento*/
-.lista{
-  position: relative;
-}
-.lista:hover .titulo {
-  opacity: 1;
-}
-
-.lista:hover .ubicacionImagen img {
-  filter: blur(2px);
-}
-// /**  cuando compilo asi no me toma el hover**/
-//  .lista{
-//    position: relative;
-// :hover .titulo {
-//    opacity: 1;
- 
-// .ubicacionImagen img {
-//    filter: blur(2px);
-//  }
-// }
-//  }
-
-
-.ubicacionImagen {
-  line-height: 0;
-  overflow: hidden;
- img {
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-}
-
-
-
-
-.titulo {
-
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  @include tamaño(100%, 100%);
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .5s;
-  background: $colorHover;
-  color: $colorfondo;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
 
 
