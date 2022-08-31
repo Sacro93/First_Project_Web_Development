@@ -1,6 +1,6 @@
 /*Variables*/
 body {
-  padding: 20px;
+  padding: 16.6666666667px;
   font-family: sans-serif;
   background: white;
 }
@@ -44,8 +44,8 @@ h2 {
   text-decoration: none;
   z-index: 1;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -62,7 +62,7 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1em;
   gap: 30px;
 }

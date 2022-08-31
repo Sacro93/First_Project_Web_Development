@@ -11,7 +11,7 @@ h2 {
   text-decoration: none;
   z-index: 1;
   position: absolute;
-  @include tamaño(100%, 100%);
+  @include tamaño(80%, 80%);
   top: 0;
   left: 0;
   opacity: 0;
