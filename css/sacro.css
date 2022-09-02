@@ -84,3 +84,31 @@ h2 {
 }
 
 /*# sourceMappingURL=sacro.css.map */
+.redes{
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+  
+}
+
+.iconos{
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display:flex;
+  transition:all .5s;
+  width: 60px;
+  
+  
+
+}
+
+.iconos:hover{
+  transform:scale(1.5) rotate(20deg);
+  opacity:0.6;
+}
