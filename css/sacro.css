@@ -1,89 +1,4 @@
-/*Variables*/
-body {
-  padding: 16.6666666667px;
-  font-family: sans-serif;
-  background: white;
-}
 
-/*Anidamiento*/
-.lista {
-  position: relative;
-}
-
-.lista:hover .titulo {
-  opacity: 1;
-}
-
-.lista:hover .ubicacionImagen img {
-  filter: blur(2px);
-}
-
-.ubicacionImagen {
-  line-height: 0;
-  overflow: hidden;
-}
-.ubicacionImagen img {
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-
-.imagen {
-  width: 60%;
-  height: auto;
-}
-
-h2 {
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
-.titulo {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  border: rgb(216, 199, 199) 2px outset;
-  border-radius: 2px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1em;
-  gap: 30px;
-}
-
-.texto, h2, h1 {
-  background-color: white;
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2em;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-/*# sourceMappingURL=sacro.css.map */
 .redes{
   position: fixed;
   right: 0;
@@ -112,3 +27,37 @@ h2 {
   transform:scale(1.5) rotate(20deg);
   opacity:0.6;
 }
+
+.titulo_{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin:30px;
+  font-size: 30px;
+}
+.contenedor{
+width:100vw;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 100px;
+gap: 40px;
+
+}
+.imagen{
+  margin:10px;
+}
+.imagen img:hover{
+  transform: scale(1.2) rotateZ(20deg)
+}
+.imagen img {
+  width: 255px;
+  height: 200px;
+  border-radius: 10px;
+  border-style: outset;
+  border: white;
+  
+}
+
+
+
