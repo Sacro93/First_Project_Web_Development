@@ -56,7 +56,15 @@ gap: 40px;
 
 .pie-pagina{
   width: 100%;
-  background-color: black;
+  background: hsla(0, 0%, 3%, 1);
+
+  background: linear-gradient(135deg, hsla(0, 0%, 3%, 1) 0%, hsla(0, 0%, 1%, 1) 53%, hsla(60, 8%, 3%, 1) 92%);
+  
+  background: -moz-linear-gradient(135deg, hsla(0, 0%, 3%, 1) 0%, hsla(0, 0%, 1%, 1) 53%, hsla(60, 8%, 3%, 1) 92%);
+  
+  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 3%, 1) 0%, hsla(0, 0%, 1%, 1) 53%, hsla(60, 8%, 3%, 1) 92%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#080808", endColorstr="#020202", GradientType=1 );
 }
 .pie-pagina .contenido1{
   width: 100%;
