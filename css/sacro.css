@@ -1,4 +1,4 @@
-
+ /*redes fixed*/
 .redes{
   position: fixed;
   right: 0;
@@ -26,6 +26,7 @@
   opacity:0.6;
 }
 
+/*repuestos*/
 
 .contenedor{
 width:100vw;
@@ -51,5 +52,65 @@ gap: 40px;
   border: black;
 }
 
+/*footer*/
 
+.pie-pagina{
+  width: 100%;
+  background-color: black;
+}
+.pie-pagina .contenido1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  padding: 45 px 0px;
+}
 
+.pie-pagina .contenido1 .cajita img{
+  width: 200px;
+  height: 180px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.pie-pagina .contenido1 .cajita iframe{
+  width: 300px;
+  height: 250px;
+  margin-top: 20px;
+  
+
+}
+
+a{
+text-decoration: none;
+color: black;
+color: white;
+}
+h2{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+.parrafo{
+  color: white;
+  
+}
+.contenido2{
+  text-align: center;
+  color: white;
+
+}
+@media screen and (max-width:800px){
+  .pie-pagina .contenido1{
+    width: 90%;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    padding: 10px 0px;
+  }
+
+}
