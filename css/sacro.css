@@ -1,48 +1,27 @@
- /*redes fixed*/
-.redes{
-  position: fixed;
-  right: 0;
-  top: 35%;
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 100;
-  
-}
-
-.iconos{
-  color: white;
+a {
   text-decoration: none;
-  padding: .7rem;
-  display:flex;
-  transition:all .5s;
-  width: 60px;
-  
+  color: black;
+  color: white;
 }
 
-.iconos:hover{
-  transform:scale(1.5) rotate(20deg);
-  opacity:0.6;
+h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
 }
 
-/*repuestos*/
-
-.contenedor{
-width:100vw;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 100px;
-gap: 40px;
-
-
+.contenedor {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 40px;
 }
-.imagen{
-  margin:10px;
-}
-.imagen img:hover{
-  transform: scale(1.2) rotateZ(20deg)
+
+.imagen {
+  margin: 10px;
 }
 .imagen img {
   width: 255px;
@@ -52,73 +31,69 @@ gap: 40px;
   border: black;
 }
 
-/*footer*/
-
-.pie-pagina{
-  width: 100%;
-  background: hsla(0, 0%, 3%, 1);
-
-  background: linear-gradient(135deg, hsla(0, 0%, 3%, 1) 0%, hsla(0, 0%, 1%, 1) 53%, hsla(60, 8%, 3%, 1) 92%);
-  
-  background: -moz-linear-gradient(135deg, hsla(0, 0%, 3%, 1) 0%, hsla(0, 0%, 1%, 1) 53%, hsla(60, 8%, 3%, 1) 92%);
-  
-  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 3%, 1) 0%, hsla(0, 0%, 1%, 1) 53%, hsla(60, 8%, 3%, 1) 92%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#080808", endColorstr="#020202", GradientType=1 );
+.imagen img:hover {
+  transform: scale(1.2) rotateZ(20deg);
 }
-.pie-pagina .contenido1{
+
+.pie-pagina {
+  background-color: black;
+}
+.pie-pagina .contenido1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45 px 0px;
 }
-
-.pie-pagina .contenido1 .cajita img{
+.pie-pagina .contenido1 .cajita img {
   width: 200px;
   height: 180px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.pie-pagina .contenido1 .cajita iframe{
+
+.pie-pagina .contenido1 .cajita iframe {
   width: 300px;
   height: 250px;
   margin-top: 20px;
-  
-
 }
 
-a{
-text-decoration: none;
-color: black;
-color: white;
-}
-h2{
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-size: 20px;
-  color: white;
-}
-.parrafo{
-  color: white;
-  
-}
-.contenido2{
-  text-align: center;
-  color: white;
-
-}
-@media screen and (max-width:800px){
-  .pie-pagina .contenido1{
+@media screen and (max-width: 800px) {
+  .pie-pagina .contenido1 {
     width: 90%;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     padding: 10px 0px;
   }
-
 }
+/*redes fixed*/
+.redes {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.iconos {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: flex;
+  transition: all 0.5s;
+  width: 60px;
+}
+
+.iconos:hover {
+  transform: scale(1.5) rotate(20deg);
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=sacro.css.map */

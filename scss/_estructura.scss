@@ -1,0 +1,67 @@
+
+.contenedor{
+  width:100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 40px;
+  
+  }
+  .imagen{
+    margin:10px;
+   img {
+      width: 255px;
+      height: 200px;
+      border-radius: 30px;
+      border-style: outset;
+      border: black;
+    }
+  }
+ 
+  .imagen img:hover{
+    transform: scale(1.2) rotateZ(20deg);
+  
+    }
+  
+  
+
+.pie-pagina{
+  background-color:black;
+
+  .contenido1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45 px 0px;
+  
+  
+  .cajita img{
+    width: 200px;
+    height: 180px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  }
+}
+  .pie-pagina .contenido1 .cajita iframe{
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    
+  }
+  @media screen and (max-width:800px){
+    .pie-pagina .contenido1{
+      width: 90%;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 10px;
+      padding: 10px 0px;
+    }
+  
+  }
