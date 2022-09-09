@@ -1,19 +1,31 @@
+@mixin tamanio($ancho, $altura){
+
+  width:$ancho;
+  height:$altura;
+  
+  }
+$anchura:100px;
+$alto: 100px;
+$margin:100px;
+$padding:10px;
+$marginTop:100px;
+$gridGap:50px;
+
 
 .contenedor{
-  width:100vw;
+  width:$anchura;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
-  gap: 40px;
+  margin-top: $marginTop;
+  gap: calc($anchura  - 60px);
   
   }
   .imagen{
-    margin:10px;
+    margin: calc($margin - 90px );
    img {
-      width: 255px;
-      height: 200px;
-      border-radius: 30px;
+    @include tamanio(255px,200px);
+      border-radius: calc($anchura - 70px);
       border-style: outset;
       border: black;
     }
@@ -24,8 +36,6 @@
   
     }
   
-  
-
 .pie-pagina{
   background-color:black;
 
@@ -35,14 +45,13 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 50px;
-    padding: 45 px 0px;
+    grid-gap: $gridGap;
+    padding: calc($padding + 35px) 0px;
   
   
   .cajita img{
-    width: 200px;
-    height: 180px;
-    margin-top: 20px;
+    @include tamanio(200px, 180px);
+    margin-top: calc($margin - 80px );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,17 +60,18 @@
   }
 }
   .pie-pagina .contenido1 .cajita iframe{
-    width: 300px;
-    height: 250px;
-    margin-top: 20px;
+
+    @include tamanio (300px, 250px);
+   
+    margin-top: calc($margin - 80px);
     
   }
   @media screen and (max-width:800px){
     .pie-pagina .contenido1{
       width: 90%;
       grid-template-columns: repeat(1,1fr);
-      grid-gap: 10px;
-      padding: 10px 0px;
+      grid-gap: calc($gridGap - 40px);
+      padding: $padding 0px;
     }
   
   }
