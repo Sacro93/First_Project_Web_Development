@@ -13,7 +13,7 @@ $gridGap:50px;
 
 
 .contenedor{
-  width:$anchura;
+  width:100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,6 +37,7 @@ $gridGap:50px;
     }
   
 .pie-pagina{
+  width: 100%;
   background-color:black;
 
   .contenido1{

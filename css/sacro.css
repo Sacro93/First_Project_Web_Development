@@ -12,7 +12,7 @@ h2 {
 }
 
 .contenedor {
-  width: 100px;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,6 +36,7 @@ h2 {
 }
 
 .pie-pagina {
+  width: 100%;
   background-color: black;
 }
 .pie-pagina .contenido1 {
@@ -64,15 +65,12 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .pie-pagina .contenido1 {
-    width: 90px;
+    width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     padding: 10px 0px;
   }
-
-
-  
-
+}
 /*redes fixed*/
 .redes {
   position: fixed;
